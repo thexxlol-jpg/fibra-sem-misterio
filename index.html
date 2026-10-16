@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fibra Sem Mistério</title>
+<meta name="description" content="Guia prático em PDF de alongamento em fibra de vidro: preparação, aplicação, ponto de tensão, lixamento, manutenção, 12 erros comuns, plano de treino de 14 dias e como calcular seu preço.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose:#b84a6b; --rose-dark:#9a3a57; --wine:#3a1f2b; --soft:#f7e6ec;
+    --ink:#2b2226; --muted:#6d5f65; --line:#ead8df; --bg:#fffafb; --ok:#2f7d5b;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;font-size:17px;line-height:1.6}
+  img{max-width:100%;display:block}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.2;margin:0 0 14px}
+  h1{font-size:31px}
+  h2{font-size:26px;text-align:center}
+  h3{font-size:19px}
+  p{margin:0 0 14px}
+  .wrap{max-width:720px;margin:0 auto;padding:0 18px}
+  section{padding:48px 0}
+  .kicker{display:block;text-align:center;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);margin-bottom:10px}
+  .center{text-align:center}
+  .muted{color:var(--muted);font-size:14px}
+
+  /* botões */
+  .cta{display:block;width:100%;max-width:440px;margin:22px auto 8px;padding:18px 20px;border-radius:14px;background:var(--rose);color:#fff;text-align:center;text-decoration:none;font-weight:800;font-size:18px;letter-spacing:.02em;box-shadow:0 8px 22px rgba(184,74,107,.35);transition:transform .15s ease,background .15s ease}
+  .cta:hover{background:var(--rose-dark);transform:translateY(-1px)}
+  .cta small{display:block;font-weight:500;font-size:13px;opacity:.9;margin-top:2px}
+  .cta-note{text-align:center;font-size:13px;color:var(--muted)}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--wine) 0%,var(--rose) 100%);color:#fff;padding:40px 0 48px}
+  .hero h1{color:#fff}
+  .hero .kicker{color:#f7c9d7}
+  .hero .sub{font-size:18px;opacity:.95}
+  .hero img{margin:22px auto 0;border-radius:16px;max-height:420px}
+  .hero .cta{background:#fff;color:var(--rose)}
+  .hero .cta:hover{background:var(--soft)}
+  .hero .cta-note{color:#f7dbe4}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px;padding:0;list-style:none}
+  .badges li{font-size:13px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px}
+
+  /* listas */
+  .checks{list-style:none;padding:0;margin:0}
+  .checks li{position:relative;padding:12px 0 12px 36px;border-bottom:1px solid var(--line)}
+  .checks li:last-child{border-bottom:0}
+  .checks li::before{content:"";position:absolute;left:0;top:15px;width:22px;height:22px;border-radius:50%;background:var(--rose) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/14px no-repeat}
+
+  .alt{background:var(--soft)}
+  .dark{background:var(--wine);color:#fff}
+  .dark h2{color:#fff}
+
+  /* problema */
+  .pain{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .pain p:last-child{margin:0}
+
+  /* capítulos */
+  .chapters{display:grid;gap:12px;margin-top:20px}
+  .chap{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;gap:14px}
+  .chap .n{flex:0 0 38px;height:38px;border-radius:50%;background:var(--soft);color:var(--rose);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px}
+  .chap h3{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:700;margin:4px 0 4px}
+  .chap p{font-size:15px;color:var(--muted);margin:0}
+
+  /* bônus */
+  .bonus{background:#fff;border:2px dashed var(--rose);border-radius:16px;padding:18px 20px;margin-top:14px}
+  .bonus .tag{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--rose)}
+  .bonus h3{margin:4px 0 6px;font-size:18px}
+  .bonus p{margin:0;font-size:15px;color:var(--muted)}
+
+  /* passos de entrega */
+  .steps{counter-reset:s;list-style:none;padding:0;margin:20px 0 0}
+  .steps li{counter-increment:s;position:relative;padding:0 0 18px 52px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--rose);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+
+  /* preço */
+  .price-card{background:#fff;color:var(--ink);border-radius:20px;padding:26px 22px;box-shadow:0 10px 30px rgba(58,31,43,.25);max-width:520px;margin:20px auto 0}
+  .compare{width:100%;border-collapse:collapse;font-size:15px;margin:6px 0 18px}
+  .compare td{padding:10px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+  .compare td:last-child{text-align:right;white-space:nowrap;font-weight:600}
+  .price{font-size:46px;font-weight:800;color:var(--rose);text-align:center;line-height:1;margin:8px 0 4px}
+  .price span{font-size:20px;vertical-align:super;margin-right:2px}
+  .price-sub{text-align:center;font-size:14px;color:var(--muted);margin-bottom:6px}
+
+  /* garantia */
+  .guarantee{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .seal{flex:0 0 78px;height:78px;border-radius:50%;border:3px solid var(--rose);color:var(--rose);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;line-height:1}
+  .seal b{font-size:28px}
+  .seal small{font-size:11px;letter-spacing:.08em}
+
+  /* faq */
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-top:10px;padding:0 18px}
+  summary{cursor:pointer;font-weight:700;padding:16px 26px 16px 0;list-style:none;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:0;top:12px;font-size:24px;color:var(--rose);font-weight:400}
+  details[open] summary::after{content:"–"}
+  details p{font-size:15px;color:var(--muted);padding-bottom:6px}
+
+  footer{padding:28px 0 90px;font-size:12px;color:var(--muted);text-align:center}
+
+  /* barra fixa mobile */
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,250,251,.97);border-top:1px solid var(--line);padding:10px 14px;display:flex;align-items:center;gap:12px;z-index:50}
+  .sticky .p{font-weight:800;color:var(--rose);font-size:18px;white-space:nowrap}
+  .sticky a{flex:1;text-align:center;background:var(--rose);color:#fff;text-decoration:none;font-weight:800;padding:13px 10px;border-radius:12px;font-size:15px}
+
+  @media (min-width:760px){
+    h1{font-size:42px}
+    h2{font-size:32px}
+    .hero{padding:64px 0 72px}
+    .chapters{grid-template-columns:1fr 1fr}
+    .sticky{display:none}
+    footer{padding-bottom:28px}
+  }
+  @media (prefers-reduced-motion:reduce){.cta{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- 1. HERO: dor/desejo + sub + CTA -->
+<header class="hero">
+  <div class="wrap center">
+    <span class="kicker">Guia prático em PDF · alongamento em fibra de vidro</span>
+    <h1>Alongamento em fibra etapa por etapa: entenda por que ele descola, quebra ou fica grosso</h1>
+    <p class="sub">O passo a passo completo, da preparação da unha à manutenção, com o ponto de tensão explicado sem enrolação, os 12 erros que mais fazem a fibra soltar e um plano de treino de 14 dias para você praticar com método.</p>
+    <img src="capa-mockup.png" alt="Capa do guia Fibra Sem Mistério" onerror="this.style.display='none'">
+    <a class="cta" href="#preco">QUERO O GUIA POR R$19,90<small>Pagamento único · acesso imediato</small></a>
+    <ul class="badges">
+      <li>13 capítulos</li>
+      <li>5 bônus prontos para usar</li>
+      <li>Garantia de 7 dias</li>
+    </ul>
+  </div>
+</header>
+
+<!-- Problema / identificação -->
+<section>
+  <div class="wrap">
+    <span class="kicker">O problema não é falta de jeito</span>
+    <h2>Fibra parece simples no vídeo. Na mesa, é outra história.</h2>
+    <div class="pain">
+      <p>A fibra fica aparente. A unha sai grossa e pesada. Uma semana depois, a cliente manda foto da ponta levantando, ou de uma unha que quebrou bem onde a natural termina.</p>
+      <p>Quase sempre a causa está em uma destas etapas: <strong>preparação</strong>, <strong>posição dos fios</strong>, <strong>ponto de tensão</strong> ou <strong>selagem da ponta</strong>. Nenhuma delas depende de dom. Todas dependem de saber o que conferir e em que ordem.</p>
+      <p>Foi isso que reunimos neste guia: cada etapa explicada, com o que checar antes de seguir para a próxima.</p>
+    </div>
+    <img src="img/hero.png" alt="Mão com alongamento em fibra de vidro, acabamento natural" style="margin:22px auto 0;border-radius:16px" onerror="this.style.display='none'">
+  </div>
+</section>
+
+<!-- 2. É para você mesmo que... -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Para quem é</span>
+    <h2>É para você, mesmo que…</h2>
+    <ul class="checks">
+      <li><strong>Nunca tenha feito um alongamento.</strong> O guia começa do que é a fibra e de quais materiais comprar primeiro, e o treino começa em tips de treino, não em cliente.</li>
+      <li><strong>Já faça unhas, mas a fibra ainda descola ou quebra.</strong> O capítulo de estrutura e a tabela de erros mostram onde está a causa e como corrigir.</li>
+      <li><strong>Tenha medo de gastar com material errado.</strong> Tem a lista do kit inicial, com o que é essencial e o que pode esperar.</li>
+      <li><strong>Não saiba quanto cobrar.</strong> Você aprende a calcular seu preço a partir dos seus custos, sem copiar a tabela de ninguém.</li>
+      <li><strong>Tenha pouco tempo.</strong> O plano de treino tem cerca de 1 hora por dia, com uma meta clara para cada dia.</li>
+    </ul>
+    <a class="cta" href="#preco">QUERO COMEÇAR AGORA<small>R$19,90 · pagamento único</small></a>
+  </div>
+</section>
+
+<!-- 3. O que você vai aprender (capítulos reais) -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Conteúdo do guia</span>
+    <h2>O que você vai aprender</h2>
+    <p class="center muted">13 capítulos na ordem em que o atendimento acontece. Cada um termina com o que conferir antes de seguir.</p>
+    <div class="chapters">
+      <div class="chap"><div class="n">1</div><div><h3>O que é a fibra de vidro</h3><p>Como funciona, quando escolher fibra e uma comparação com gel na tip, gel moldado e molde F1.</p></div></div>
+      <div class="chap"><div class="n">2</div><div><h3>Segurança primeiro</h3><p>Anamnese, quando não aplicar, alergia a acrilatos, sua proteção e o "calor" na cabine.</p></div></div>
+      <div class="chap"><div class="n">3</div><div><h3>Materiais: o kit para começar</h3><p>O que comprar, para que serve cada item e o que deixar para depois.</p></div></div>
+      <div class="chap"><div class="n">4</div><div><h3>Preparação da unha natural</h3><p>A etapa em que começam muitos descolamentos, em 7 passos.</p></div></div>
+      <div class="chap"><div class="n">5</div><div><h3>Aplicação da fibra, passo a passo</h3><p>Cortar, abrir os fios em leque, assentar, alinhar e curar sem engrossar.</p></div></div>
+      <div class="chap"><div class="n">6</div><div><h3>Ponto de tensão e curvatura C</h3><p>Onde colocar o volume para a unha durar, e como conferir de lado, de frente e de cima.</p></div></div>
+      <div class="chap"><div class="n">7</div><div><h3>Lixamento e formatos</h3><p>Ordem do lixamento e quadrado, squoval, almond, bailarina e stiletto.</p></div></div>
+      <div class="chap"><div class="n">8</div><div><h3>Acabamento</h3><p>Banho de gel, esmaltação em camadas finas e selagem da ponta.</p></div></div>
+      <div class="chap"><div class="n">9</div><div><h3>Manutenção e remoção</h3><p>Quando fazer, como tratar descolamento e como remover sem estragar a unha natural.</p></div></div>
+      <div class="chap"><div class="n">10</div><div><h3>Os 12 erros mais comuns</h3><p>Tabela com o problema, a causa provável e a correção de cada um.</p></div></div>
+      <div class="chap"><div class="n">11</div><div><h3>Plano de treino de 14 dias</h3><p>Uma meta por dia, do preparo à mão completa e à primeira modelo de confiança.</p></div></div>
+      <div class="chap"><div class="n">12</div><div><h3>Quanto cobrar</h3><p>A conta em 4 passos: material, custo fixo, valor da sua hora e posicionamento.</p></div></div>
+      <div class="chap"><div class="n">13</div><div><h3>Primeiras clientes</h3><p>Portfólio, atendimento organizado, retorno em 7 dias e pedido de indicação.</p></div></div>
+    </div>
+    <img src="img/antes-estrutura.png" alt="Vista lateral mostrando o ponto de tensão do alongamento" style="margin:24px auto 0;border-radius:16px" onerror="this.style.display='none'">
+  </div>
+</section>
+
+<!-- 4. Bônus (5 reais) -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Junto com o guia</span>
+    <h2>5 bônus para usar no atendimento</h2>
+    <p class="center muted">Materiais prontos que você usa a partir da primeira cliente.</p>
+    <img src="img/bonus-mockup.png" alt="Páginas dos bônus do guia" style="margin:18px auto 0;border-radius:16px" onerror="this.style.display='none'">
+    <div class="bonus"><span class="tag">BÔNUS 1</span><h3>Ficha de anamnese + termo de ciência</h3><p>Para imprimir ou enviar em PDF. Perguntas de saúde, observações e autorização de uso de fotos.</p></div>
+    <div class="bonus"><span class="tag">BÔNUS 2</span><h3>Checklist do atendimento</h3><p>O que conferir antes de a cliente chegar, durante a aplicação e depois que ela vai embora.</p></div>
+    <div class="bonus"><span class="tag">BÔNUS 3</span><h3>Cuidados pós-aplicação para enviar à cliente</h3><p>Texto pronto para copiar e mandar no WhatsApp depois do atendimento.</p></div>
+    <div class="bonus"><span class="tag">BÔNUS 4</span><h3>Calculadora de preço</h3><p>Tabela para somar material, custo fixo e sua hora e chegar ao seu preço mínimo.</p></div>
+    <div class="bonus"><span class="tag">BÔNUS 5</span><h3>30 ideias de posts</h3><p>Pautas para o seu Instagram, de bastidores e cuidados a mitos e verdades sobre a fibra.</p></div>
+  </div>
+</section>
+
+<!-- 5. Como recebe -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Entrega</span>
+    <h2>Como você recebe</h2>
+    <ol class="steps">
+      <li><strong>Finalize a compra</strong> no checkout seguro da Hotmart.</li>
+      <li><strong>Receba o acesso por e-mail</strong> assim que o pagamento for aprovado.</li>
+      <li><strong>Baixe o guia e os bônus em PDF</strong> na área de membros. Leia no celular, no computador ou imprima.</li>
+    </ol>
+    <p class="muted">Pagamentos por Pix e cartão costumam ser aprovados na hora. O boleto pode levar até 3 dias úteis para compensar.</p>
+  </div>
+</section>
+
+<!-- 6. Preço com ancoragem honesta -->
+<section class="dark" id="preco">
+  <div class="wrap">
+    <span class="kicker" style="color:#f7c9d7">Investimento</span>
+    <h2>Quanto custa errar na fibra?</h2>
+    <p class="center" style="opacity:.92">Cada alongamento refeito por descolamento gasta de novo gel, fibra, lixas, descartáveis e mais uma hora do seu dia. E material comprado errado fica parado na gaveta.</p>
+    <div class="price-card">
+      <table class="compare">
+        <tr><td>Refazer uma aplicação que soltou</td><td>material + 1h</td></tr>
+        <tr><td>Comprar gel ou cabine que não servem</td><td>dinheiro parado</td></tr>
+        <tr><td>Cobrar sem fazer a conta</td><td>trabalhar no prejuízo</td></tr>
+      </table>
+      <p class="center" style="margin:0;font-weight:600">Guia completo + 5 bônus</p>
+      <div class="price"><span>R$</span>19,90</div>
+      <p class="price-sub">Pagamento único. Sem mensalidade.</p>
+      <a class="cta" href="#preco">QUERO O FIBRA SEM MISTÉRIO<small>Acesso imediato após a aprovação</small></a>
+      <p class="cta-note">Compra processada pela Hotmart</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Garantia -->
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <div class="seal"><b>7</b><small>DIAS</small></div>
+      <div>
+        <h3>Garantia de 7 dias</h3>
+        <p>Leia o guia, abra os bônus e comece o plano de treino. Se achar que o material não é para você, peça o reembolso dentro de 7 dias pela própria Hotmart e receba o valor de volta. Sem perguntas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  ESPAÇO PARA DEPOIMENTOS REAIS
+  Só publicar depoimentos de compradoras reais, com autorização por escrito (print + nome/cidade autorizados).
+  Não inventar, não usar foto de banco como se fosse aluna, não usar depoimento de outro produto.
+
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Quem já leu</span>
+    <h2>O que estão dizendo</h2>
+    <img src="img/depoimento-1.png" alt="Depoimento de compradora" onerror="this.style.display='none'">
+  </div>
+</section>
+-->
+
+<!-- 8. FAQ -->
+<section class="alt">
+  <div class="wrap">
+    <span class="kicker">Dúvidas</span>
+    <h2>Perguntas frequentes</h2>
+
+    <details><summary>É curso em vídeo?</summary>
+      <p>Não. É um guia prático em PDF, com o passo a passo escrito e organizado por etapa, mais 5 bônus também em PDF. Você lê no seu ritmo e volta ao capítulo da etapa que está treinando.</p></details>
+
+    <details><summary>Serve para quem nunca fez alongamento?</summary>
+      <p>Sim. O guia começa explicando o que é a fibra e quais materiais comprar, e o plano de 14 dias começa em tips de treino. Você só atende uma modelo de confiança no dia 13.</p></details>
+
+    <details><summary>Já faço unhas. Vai acrescentar algo?</summary>
+      <p>Se a sua fibra ainda descola, quebra no ponto de tensão ou fica grossa, sim. Os capítulos de estrutura, lixamento e a tabela dos 12 erros foram feitos para encontrar a causa de cada problema.</p></details>
+
+    <details><summary>Preciso ter os materiais antes de comprar?</summary>
+      <p>Não. O capítulo 3 mostra o kit para começar, para que serve cada item e o que pode ficar para depois, para você comprar com mais segurança.</p></details>
+
+    <details><summary>Ensina outras técnicas além da fibra?</summary>
+      <p>O foco é a fibra de vidro. O capítulo 1 traz uma comparação com gel na tip, gel moldado e molde F1 para você entender quando cada uma é mais indicada.</p></details>
+
+    <details><summary>Tem certificado?</summary>
+      <p>Não. É um guia de estudo e prática, não um curso com certificação.</p></details>
+
+    <details><summary>Como e quando recebo?</summary>
+      <p>Assim que o pagamento é aprovado, a Hotmart envia o acesso para o seu e-mail. Os arquivos ficam disponíveis na área de membros para baixar.</p></details>
+
+    <details><summary>E se eu não gostar?</summary>
+      <p>Você tem 7 dias de garantia. Basta pedir o reembolso pela Hotmart dentro do prazo e o valor é devolvido.</p></details>
+  </div>
+</section>
+
+<!-- 9. CTA final -->
+<section>
+  <div class="wrap center">
+    <h2>Pare de adivinhar onde a fibra está falhando</h2>
+    <p>13 capítulos, 5 bônus e um plano de treino de 14 dias para você praticar com método, do preparo à manutenção.</p>
+    <a class="cta" href="#preco">QUERO O GUIA POR R$19,90<small>Pagamento único · garantia de 7 dias</small></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Este material tem caráter educativo. Resultados dependem da sua prática. Não há promessa de renda.<br>
+    Este site não é afiliado ao Facebook nem à Meta Platforms, Inc.</p>
+    <p>Fibra Sem Mistério · Universo Nail Design · Suporte pelo e-mail de confirmação da compra (Hotmart) · Garantia de 7 dias pela Hotmart</p>
+  </div>
+</footer>
+
+<div class="sticky">
+  <span class="p">R$19,90</span>
+  <a href="#preco">Quero o guia</a>
+</div>
+
+</body>
+</html>
