@@ -288,6 +288,15 @@
     .sticky{display:none}
     footer{padding-bottom:30px}
   }
+  .exit{border:0;border-radius:var(--r);padding:30px 22px 22px;width:min(440px,calc(100% - 32px));background:var(--bg);color:var(--ink);box-shadow:var(--shadow);text-align:center}
+  .exit::backdrop{background:rgba(58,31,43,.6)}
+  .exit .x{position:absolute;top:8px;right:10px;width:40px;height:40px;border:0;background:none;font-size:28px;line-height:1;color:var(--muted);cursor:pointer}
+  .exit .tag{margin:0 0 6px;color:var(--rose-ink);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+  .exit h2{margin:0 0 10px;font-family:"Playfair Display",Georgia,serif;font-size:26px;line-height:1.2;color:var(--wine)}
+  .exit h2 s{color:var(--muted);font-size:.7em;font-weight:400}
+  .exit p{margin:0;color:var(--muted)}
+  .exit .cta{margin:20px auto 6px}
+  .exit .no{border:0;background:none;padding:10px;color:var(--muted);text-decoration:underline;font-size:14px;cursor:pointer}
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     *,*::before,*::after{transition:none!important;animation:none!important}
@@ -340,7 +349,7 @@
       <img class="mock" src="assets/hero-mockup.webp" width="820" height="702" fetchpriority="high" alt="Páginas reais do guia Fibra Sem Mistério: capa no celular, capítulo 6 no tablet e páginas dos bônus">
     </div>
     <div class="hero-cta">
-      <a class="cta" data-cta="hero" href="#preco">QUERO O GUIA POR R$19,90<small>Pagamento único · acesso imediato</small></a>
+      <a class="cta" data-cta="hero" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO O GUIA POR R$19,90<small>Pagamento único · acesso imediato</small></a>
       <p class="cta-note">
         <span><svg class="ico"><use href="#i-shield"/></svg>Garantia de 7 dias</span>
         <span><svg class="ico"><use href="#i-lock"/></svg>Compra segura pela Hotmart</span>
@@ -391,7 +400,7 @@
       <li><b>Selagem da ponta</b><span>Borda livre sem selar faz a ponta levantar e o esmalte descascar. Capítulo 8.</span></li>
     </ol>
     <p class="center muted" style="margin-top:16px">Foi isso que reunimos no guia: cada etapa explicada, com o que checar antes de seguir para a próxima.</p>
-    <a class="cta" data-cta="dor" href="#preco">QUERO ENTENDER CADA ETAPA<small>R$19,90 · pagamento único</small></a>
+    <a class="cta" data-cta="dor" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO ENTENDER CADA ETAPA<small>R$19,90 · pagamento único</small></a>
   </div>
 </section>
 
@@ -421,7 +430,7 @@
         </ul>
       </div>
     </div>
-    <a class="cta" data-cta="perfil" href="#preco">QUERO COMEÇAR AGORA<small>R$19,90 · acesso imediato</small></a>
+    <a class="cta" data-cta="perfil" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO COMEÇAR AGORA<small>R$19,90 · acesso imediato</small></a>
   </div>
 </section>
 
@@ -471,7 +480,7 @@
         <p class="swipe-hint">Arraste para o lado para ver mais páginas · toque para ampliar</p>
       </div>
     </div>
-    <a class="cta" data-cta="por-dentro" href="#preco">QUERO OS 13 CAPÍTULOS + 5 BÔNUS<small>R$19,90 · pagamento único</small></a>
+    <a class="cta" data-cta="por-dentro" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO OS 13 CAPÍTULOS + 5 BÔNUS<small>R$19,90 · pagamento único</small></a>
   </div>
 </section>
 
@@ -492,7 +501,7 @@
       <button class="zoom" type="button" data-full="assets/planilha.webp" aria-label="Ampliar a planilha calculadora de preço"><img src="assets/planilha.webp" width="760" height="832" loading="lazy" decoding="async" alt="Planilha calculadora de preço com campos amarelos para preencher e o preço mínimo calculado"></button>
       <figcaption>A planilha do bônus 4: você troca os valores amarelos pelos seus e ela calcula o preço mínimo. Os números da imagem são só exemplo.</figcaption>
     </figure>
-    <a class="cta" data-cta="bonus" href="#preco">QUERO O GUIA + OS 5 BÔNUS<small>R$19,90 · acesso imediato</small></a>
+    <a class="cta" data-cta="bonus" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO O GUIA + OS 5 BÔNUS<small>R$19,90 · acesso imediato</small></a>
   </div>
 </section>
 
@@ -518,7 +527,7 @@
       </table>
     </div>
     <p class="center muted" style="margin-top:16px">Dá para usar o guia junto com vídeos: ele diz o que conferir em cada etapa, para você saber o que procurar.</p>
-    <a class="cta" data-cta="comparativo" href="#preco">QUERO ESTUDAR COM MÉTODO<small>R$19,90 · garantia de 7 dias</small></a>
+    <a class="cta" data-cta="comparativo" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO ESTUDAR COM MÉTODO<small>R$19,90 · garantia de 7 dias</small></a>
   </div>
 </section>
 
@@ -564,7 +573,7 @@
       <p class="center" style="margin:0;font-weight:800">Tudo isso por</p>
       <div class="price"><span>R$</span>19,90</div>
       <p class="price-sub">Pagamento único. Sem mensalidade.<br>Ou parcele em até 6x no cartão (com juros).</p>
-      <a class="cta" data-cta="preco" href="#preco">QUERO O FIBRA SEM MISTÉRIO<small>Acesso imediato após a aprovação</small></a>
+      <a class="cta" data-cta="preco" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO O FIBRA SEM MISTÉRIO<small>Acesso imediato após a aprovação</small></a>
       <ul class="pay" aria-label="Formas de pagamento">
         <li><svg class="ico"><use href="#i-qr"/></svg>Pix</li>
         <li><svg class="ico"><use href="#i-card"/></svg>Cartão</li>
@@ -606,7 +615,7 @@
         <p class="muted" style="margin:0">O pedido é feito direto na Hotmart, sem precisar falar com ninguém.</p>
       </div>
     </div>
-    <a class="cta" data-cta="garantia" href="#preco">QUERO TESTAR POR 7 DIAS<small>R$19,90 · pagamento único</small></a>
+    <a class="cta" data-cta="garantia" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO TESTAR POR 7 DIAS<small>R$19,90 · pagamento único</small></a>
   </div>
 </section>
 
@@ -691,7 +700,7 @@
   <div class="wrap narrow center">
     <h2>Pare de adivinhar onde a fibra está falhando</h2>
     <p>13 capítulos, 5 bônus e um plano de treino de 14 dias para você praticar com método, do preparo à manutenção.</p>
-    <a class="cta" data-cta="final" href="#preco">QUERO O GUIA POR R$19,90<small>Pagamento único · garantia de 7 dias</small></a>
+    <a class="cta" data-cta="final" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h">QUERO O GUIA POR R$19,90<small>Pagamento único · garantia de 7 dias</small></a>
     <p class="cta-note">
       <span><svg class="ico"><use href="#i-zap"/></svg>Acesso imediato</span>
       <span><svg class="ico"><use href="#i-lock"/></svg>Pix, cartão e boleto</span>
@@ -717,7 +726,7 @@
 
 <div class="sticky" id="sticky" aria-hidden="true">
   <span class="p"><b>R$19,90</b><small>guia + 5 bônus</small></span>
-  <a data-cta="sticky" href="#preco" tabindex="-1">Quero o guia</a>
+  <a data-cta="sticky" href="https://pay.hotmart.com/E108054063D?off=kjd5h60h" tabindex="-1">Quero o guia</a>
 </div>
 
 <dialog class="lb" id="lb" aria-label="Página ampliada">
@@ -725,9 +734,19 @@
   <img id="lbImg" alt="">
 </dialog>
 
+<dialog class="exit" id="exit" aria-labelledby="exitT">
+  <button type="button" class="x" id="exitClose" aria-label="Fechar">×</button>
+  <p class="tag">Antes de você ir</p>
+  <h2 id="exitT">Leve o guia completo por R$9,99 <s>R$19,90</s></h2>
+  <p>Os mesmos 13 capítulos e os 5 bônus, com a mesma garantia de 7 dias.</p>
+  <a class="cta" data-cta="saida" data-exit href="#preco">QUERO POR R$9,99<small>Pagamento único · acesso imediato</small></a>
+  <button type="button" class="no" id="exitNo">Não, obrigada</button>
+</dialog>
+
 <script>
   /* ==== CONFIG ==== */
-  const CHECKOUT_URL = "#preco"; // TROCAR pelo link pay.hotmart.com após aprovação
+  const CHECKOUT_URL = "https://pay.hotmart.com/E108054063D?off=kjd5h60h"; // checkout direto, preço base R$19,90
+  const EXIT_OFFER = ""; // código (off=) da oferta R$9,99 na Hotmart; vazio = pop-up de saída desligado
   const PASS_PARAMS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","src","sck"];
 
   (function(){
@@ -738,9 +757,10 @@
     PASS_PARAMS.forEach(k => { if (q.get(k)) saved[k] = q.get(k); });
     try { sessionStorage.setItem("p020_params", JSON.stringify(saved)); } catch(e) {}
 
-    function checkoutHref(){
+    function checkoutHref(off){
       if (!isReal) return CHECKOUT_URL;
       const u = new URL(CHECKOUT_URL);
+      if (off) u.searchParams.set("off", off);
       Object.keys(saved).forEach(k => { if (!u.searchParams.has(k)) u.searchParams.set(k, saved[k]); });
       // Hotmart: se não veio sck, monta um a partir das UTMs para atribuir a venda ao anúncio
       if (!u.searchParams.has("sck") && saved.utm_source) {
@@ -751,7 +771,7 @@
 
     /* Todos os botões usam a mesma constante */
     const ctas = document.querySelectorAll("a[data-cta]");
-    ctas.forEach(a => { a.href = checkoutHref(); });
+    ctas.forEach(a => { a.href = a.hasAttribute("data-exit") ? checkoutHref(EXIT_OFFER) : checkoutHref(); });
 
     /* Pixel: InitiateCheckout no clique (1 evento por 3 s, com eventID) */
     let lastIC = 0;
@@ -762,9 +782,38 @@
       if (now - lastIC < 3000) return;
       lastIC = now;
       if (window.fbq) fbq("track", "InitiateCheckout",
-        { content_name: "Fibra Sem Mistério", content_ids: ["P020"], content_type: "product", value: 19.90, currency: "BRL", cta: a.dataset.cta },
+        { content_name: "Fibra Sem Mistério", content_ids: ["P020"], content_type: "product", value: a.hasAttribute("data-exit") ? 9.99 : 19.90, currency: "BRL", cta: a.dataset.cta },
         { eventID: __evid("InitiateCheckout") });
     });
+
+    /* Oferta de saída R$9,99: no máximo 1x por sessão.
+       Computador = mouse sai pelo topo da janela; celular = botão voltar. */
+    const ex = document.getElementById("exit");
+    if (EXIT_OFFER && isReal && ex && ex.showModal) {
+      let shown = false;
+      try { shown = sessionStorage.getItem("p020_exit") === "1"; } catch(e) {}
+      const openExit = () => {
+        if (shown || ex.open) return false;
+        shown = true;
+        try { sessionStorage.setItem("p020_exit", "1"); } catch(e) {}
+        ex.showModal();
+        if (window.fbq) fbq("trackCustom", "ExitOffer", { content_ids: ["P020"], value: 9.99, currency: "BRL" }, { eventID: __evid("ExitOffer") });
+        return true;
+      };
+      document.addEventListener("mouseout", e => { if (!e.relatedTarget && e.clientY <= 0) openExit(); });
+      if (!shown) {
+        /* O navegador só segura o "voltar" depois de alguma interação na página */
+        const arm = () => {
+          history.pushState({ p020exit: 1 }, "");
+          window.addEventListener("popstate", () => { if (!openExit()) history.back(); }, { once: true });
+        };
+        ["touchstart", "scroll", "click"].forEach(ev => window.addEventListener(ev, arm, { once: true, passive: true }));
+      }
+      const closeExit = () => ex.close();
+      document.getElementById("exitClose").addEventListener("click", closeExit);
+      document.getElementById("exitNo").addEventListener("click", closeExit);
+      ex.addEventListener("click", e => { if (e.target === ex) closeExit(); });
+    }
 
     /* Pixel: ViewContent após 15 s OU 50% de scroll, uma vez só */
     let vc = false;
